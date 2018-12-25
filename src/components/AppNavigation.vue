@@ -16,10 +16,10 @@
             <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
             <v-toolbar-title>{{appTitle}}</v-toolbar-title>
-            <v-btn flat class="hidden-sm-and-down">Menu</v-btn>
+            <v-btn flat class="hidden-sm-and-down" to="/menu">Menu</v-btn>
             <v-spacer class="hidden-sm-and-down"></v-spacer>
-            <v-btn flat class="hidden-sm-and-down">SIGN IN</v-btn>
-            <v-btn color="blue-grey darken-3" class="hidden-sm-and-down">JOIN</v-btn>
+            <v-btn flat class="hidden-sm-and-down" to="/sign-in">SIGN IN</v-btn>
+            <v-btn color="blue-grey darken-3" class="hidden-sm-and-down" to="/join">JOIN</v-btn>
         </v-toolbar>
     </span>
 </template>
@@ -33,6 +33,7 @@ export default {
             drawer: false,
             items: [
                 { title: 'Menu' },
+                { title: 'Profile' },
                 { title: 'Sign In' },
                 { title: 'Join' }
             ]
@@ -42,4 +43,8 @@ export default {
 </script>
 
 <style scoped>
+a {
+    color: white;
+    text-decoration: none;
+}
 </style>
