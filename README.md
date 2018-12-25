@@ -27,3 +27,11 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Technology Used
+Vue.js
+Vue CLI
+Vuex
+Vuetify
+Firebase
